@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "first-project"
+version = "0.1.0"
+description = ""
+authors = ["Faizan59khan <khan_faizan59@yahoo.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.110.0"
+uvicorn = {extras = ["standard"], version = "^0.29.0"}
+sqlmodel = "^0.0.16"
+psycopg = {extras = ["binary"], version = "^3.1.18"}
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
