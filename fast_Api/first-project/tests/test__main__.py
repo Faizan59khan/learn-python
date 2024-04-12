@@ -63,7 +63,7 @@ def test_read_list_main():
         def get_session_override():  
                 return session  
 
-        app.dependency_overrides[get_session] = get_session_override 
+        app.dependency_overrides[get_session] = get_session_override   #override the main session
         client = TestClient(app=app)
 
         response = client.get("/todos/")
